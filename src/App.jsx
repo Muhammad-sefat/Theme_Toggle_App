@@ -10,18 +10,18 @@ const App = () => {
         theme === "light" ? "bg-white text-black" : "bg-gray-900 text-white"
       }`}
     >
-      <h1 className="text-3xl font-bold mb-6">
+      <h1 className="text-3xl font-bold mb-8">
         Theme Toggle App ( {theme.toUpperCase()} Mode )
       </h1>
       <div
-        className={`w-16 h-8 flex items-center rounded-full p-1 cursor-pointer ${
+        className={`w-20 h-8 flex items-center rounded-full p-1 cursor-pointer ${
           theme === "light" ? "bg-gray-300" : "bg-blue-600"
         }`}
         onClick={toggleTheme}
       >
         <div
           className={`w-6 h-6 bg-white rounded-full shadow-md transform transition-transform duration-300 ${
-            theme === "dark" ? "translate-x-8" : ""
+            theme === "dark" ? "translate-x-11" : ""
           }`}
         ></div>
       </div>
